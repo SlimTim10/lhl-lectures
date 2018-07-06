@@ -8,4 +8,25 @@
 	- In this case, the set of endpoints (URLs)
 
 ** GitHub Example
+*** Documentation
+- https://developer.github.com/v3/
 
+*** Objective
+Given a repo, print out the latest 20 issues for the repo, showing the closed ones above the open ones.
+
+*** Tasks
+- Read the documentation!
+- Setup and test with an API endpoint
+- Get the latest 20 issues for a repo
+- Show the closed issues before the open ones
+
+** NextBus Example
+*** Documentation
+- https://www.nextbus.com/xmlFeedDocs/NextBusXMLFeed.pdf
+- https://gist.github.com/grantland/7cf4097dd9cdf0dfed14
+
+*** Objective
+???
+
+*** Tasks
+- 

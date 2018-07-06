@@ -1,0 +1,11 @@
+* Node API Demo
+
+** What is an API?
+- Application Programming Interface
+  - Application: the app we're making
+  - Programming: what we're doing
+  - Interface: the point where two systems interact
+	- In this case, the set of endpoints (URLs)
+
+** GitHub Example
+

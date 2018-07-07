@@ -1,5 +1,3 @@
-// A node script that, given a repo, prints out the latest 20 issues for the repo and format the issue differently if they are closed vs open
-
 var request = require('request');
 require('dotenv').config();
 

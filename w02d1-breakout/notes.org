@@ -7,7 +7,7 @@
   - Interface: the point where two systems interact
 	- In this case, the set of endpoints (URLs)
 
-** GitHub Example
+** GitHub API
 *** Documentation
 - https://developer.github.com/v3/
 
@@ -20,7 +20,7 @@ Given a repo, print out the latest 20 issues for the repo, showing the closed on
 - Get the latest 20 issues for a repo
 - Show the closed issues before the open ones
 
-** NextBus Example
+** NextBus API
 *** Documentation
 - https://www.nextbus.com/xmlFeedDocs/NextBusXMLFeed.pdf
 - https://gist.github.com/grantland/7cf4097dd9cdf0dfed14
@@ -30,3 +30,6 @@ Given a repo, print out the latest 20 issues for the repo, showing the closed on
 
 *** Tasks
 - 
+
+* Export options :noexport:
+#+OPTIONS: toc:nil

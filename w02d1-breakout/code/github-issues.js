@@ -8,16 +8,16 @@ var repo = '/repos/facebook/react/issues?state=all';
 
 var options = {
   url: base+repo,
+  json: true,
   headers: {
     'User-Agent': 'myscript',
     'Authorization': 'token ' + process.env.GITHUB_API_KEY
   }
 };
  
-function callback(error, response, body) {
+function callback(error, response, data) {
   if (!error && response.statusCode == 200) {
-    var info = JSON.parse(body).slice(0, 20);
-    console.log('number of issues:', info.length);
+    var info = data.slice(0, 20);
     
     var openIssues = info.filter(function(issue) {
       return issue.state === 'open';
@@ -27,21 +27,21 @@ function callback(error, response, body) {
       return issue.state === 'closed';
     });
     
-    console.log('---OPEN---');
-    for (var issue of openIssues) {
-      console.log(issue.body);
-      console.log('------------------------------------------------------------------------------------------');
-    }
-
     console.log('---CLOSED---');
     for (var issue of closedIssues) {
-      console.log(issue.body);
-      console.log('------------------------------------------------------------------------------------------');
+      console.log(issue.title);
+      console.log();            // Insert line break for formatting
+    }
+
+    console.log('---OPEN---');
+    for (var issue of openIssues) {
+      console.log(issue.title);
+      console.log();            // Insert line break for formatting
     }
   } else {
     console.log('Status code:', response.statusCode);
     console.log('Error:', error);
-    console.log('Body:', body);
+    console.log('Data:', data);
   }
 }
  

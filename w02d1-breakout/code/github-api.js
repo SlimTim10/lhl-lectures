@@ -1,5 +1,7 @@
 var request = require('request');
 
+var API_BASE = 'https://api.github.com';
+
 function handleResponse(error, response, body) {
   if (!error && response.statusCode == 200) {
     var issues = JSON.parse(body).slice(0, 20);
@@ -23,7 +25,6 @@ function handleResponse(error, response, body) {
 }
 
 function showIssues(owner, repo) {
-  var API_BASE = 'https://api.github.com';
   var ISSUES_ENDPOINT = API_BASE + '/repos/' + owner + '/' + repo + '/issues?state=all';
   
   var options = {

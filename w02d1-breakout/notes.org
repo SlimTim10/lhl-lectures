@@ -1,11 +1,11 @@
 * Node API Demo
-
 ** What is an API?
 - Application Programming Interface
   - Application: the app we're making
   - Programming: what we're doing
   - Interface: the point where two systems interact
-	- In this case, the set of endpoints (URLs)
+	- On the web, the set of endpoints (URLs)
+- Do we need an API to get the data we want?
 
 ** GitHub API
 *** Documentation
@@ -19,6 +19,8 @@ Given a repo, print out the latest 20 issues for the repo, showing the closed on
 - Setup and test with an API endpoint
 - Get the latest 20 issues for a repo
 - Show the closed issues before the open ones
+- Get command line arguments
+- Refactor into module
 
 ** NextBus API
 *** Documentation

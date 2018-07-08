@@ -22,7 +22,7 @@ function handleResponse(error, response, body) {
   }
 }
 
-function logIssues(owner, repo) {
+function showIssues(owner, repo) {
   var API_BASE = 'https://api.github.com';
   var ISSUES_ENDPOINT = API_BASE + '/repos/' + owner + '/' + repo + '/issues?state=all';
   
@@ -37,5 +37,5 @@ function logIssues(owner, repo) {
 }
 
 module.exports = {
-  logIssues: logIssues
+  showIssues: showIssues
 };

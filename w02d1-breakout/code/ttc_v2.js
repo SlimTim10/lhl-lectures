@@ -1,7 +1,17 @@
 var request = require('request');
 
+var args = process.argv.slice(2);
+var routeTag = args[0] || 504;
+var stopTag = args[1] || 23895;
+
+var API_BASE = 'http://webservices.nextbus.com/service/publicJSONFeed';
+var ENDPOINT = API_BASE
+    + '?command=predictions&a=ttc'
+    + '&r=' + routeTag
+    + '&s=' + stopTag;
+
 var options = {
-  url: 'http://webservices.nextbus.com/service/publicJSONFeed?command=predictions&a=ttc&r=504&s=23895',
+  url: ENDPOINT,
   headers: {
     'User-Agent': 'myawesomeapp'
   }

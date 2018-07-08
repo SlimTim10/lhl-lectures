@@ -10,13 +10,13 @@ function handleResponse(error, response, body) {
       return issue.state === 'open';
     });
     console.log('CLOSED ISSUES:');
-    for (var issue of closedIssues) {
+    closedIssues.forEach(function(issue) {
       console.log('Title: ' + issue.title);
-    }
+    });
     console.log('OPEN ISSUES:');
-    for (var issue of openIssues) {
+    openIssues.forEach(function(issue) {
       console.log('Title: ' + issue.title);
-    }
+    });
   } else {
     console.log('ERROR:', body);
   }

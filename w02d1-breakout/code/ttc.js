@@ -7,7 +7,7 @@ var options = {
   }
 };
 
-function callback(error, response, body) {
+function handleResponse(error, response, body) {
   if (!error && response.statusCode == 200) {
     var info = JSON.parse(body);
     var stopTitle = info.predictions.stopTitle;
@@ -21,4 +21,4 @@ function callback(error, response, body) {
   }
 }
 
-request(options, callback);
+request(options, handleResponse);

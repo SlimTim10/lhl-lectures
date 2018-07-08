@@ -1,46 +1,39 @@
 var request = require('request');
-require('dotenv').config();
 
-var base = 'https://api.github.com';
-var repo = '/repos/facebook/react/issues?state=all';
+var args = process.argv.slice(2);
+var owner = args[0];
+var repo = args[1];
 
+var API_BASE = 'https://api.github.com';
+var ISSUES_ENDPOINT = API_BASE + '/repos/' + owner + '/' + repo + '/issues?state=all';
+ 
 var options = {
-  url: base+repo,
-  json: true,
+  url: ISSUES_ENDPOINT,
   headers: {
-    'User-Agent': 'myscript',
-    'Authorization': 'token ' + process.env.GITHUB_API_KEY
+    'User-Agent': 'myawesomeapp'
   }
 };
- 
-function callback(error, response, data) {
+
+function callback(error, response, body) {
   if (!error && response.statusCode == 200) {
-    var info = data.slice(0, 20);
-    
-    var openIssues = info.filter(function(issue) {
-      return issue.state === 'open';
-    });
-    
-    var closedIssues = info.filter(function(issue) {
+    var issues = JSON.parse(body).slice(0, 20);
+    var closedIssues = issues.filter(function(issue) {
       return issue.state === 'closed';
     });
-    
-    console.log('---CLOSED---');
+    var openIssues = issues.filter(function(issue) {
+      return issue.state === 'open';
+    });
+    console.log('CLOSED ISSUES:');
     for (var issue of closedIssues) {
-      console.log(issue.title);
-      console.log();            // Insert line break for formatting
+      console.log('Title: ' + issue.title);
     }
-
-    console.log('---OPEN---');
+    console.log('OPEN ISSUES:');
     for (var issue of openIssues) {
-      console.log(issue.title);
-      console.log();            // Insert line break for formatting
+      console.log('Title: ' + issue.title);
     }
   } else {
-    console.log('Status code:', response.statusCode);
-    console.log('Error:', error);
-    console.log('Data:', data);
+    console.log('ERROR:', body);
   }
 }
- 
+
 request(options, callback);

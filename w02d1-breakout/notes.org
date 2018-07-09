@@ -4,7 +4,7 @@
   - Application: the app we're making
   - Programming: what we're doing
   - Interface: the point where two systems interact
-	- On the web, the set of endpoints (URLs)
+- On the web, an API is a set of endpoints (URLs) to interact with a service (send or receive data)
 - Restrictions
   - Authentication
   - Rate limiting

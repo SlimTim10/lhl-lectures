@@ -5,7 +5,9 @@
   - Programming: what we're doing
   - Interface: the point where two systems interact
 	- On the web, the set of endpoints (URLs)
-- Do we need an API to get the data we want?
+- Restrictions
+  - Authentication
+  - Rate limiting
 
 ** GitHub API
 *** Documentation
@@ -38,6 +40,9 @@ Given a bus/streetcar route and stop, tell us when the next 3 vehicles are comin
 - Show the predictions in a nice format
 - Get command-line arguments
 - Refactor into module
+
+** Extra
+- Do we need an API to get the data we want?
 
 * Export options :noexport:
 #+OPTIONS: toc:nil

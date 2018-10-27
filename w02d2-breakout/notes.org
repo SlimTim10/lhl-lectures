@@ -2,7 +2,17 @@
 - Know about the fancy ES6 features and when to use them
 
 * ES6 Features
-** 
+- http://es6-features.org
+
+** let, const
+
+** for...of
+
+** Template literals
+
+** Arrow functions
+
+** Promises
 
 * Export options :noexport:
 #+OPTIONS: toc:nil

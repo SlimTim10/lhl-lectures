@@ -1,0 +1,8 @@
+* Goal
+- Know about the fancy ES6 features and when to use them
+
+* ES6 Features
+** 
+
+* Export options :noexport:
+#+OPTIONS: toc:nil

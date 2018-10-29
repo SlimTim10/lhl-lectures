@@ -51,4 +51,4 @@ function how_about_strings() {
   }
 }
 
-how_about_strings(); // Will this work?
+// how_about_strings(); // Will this work?

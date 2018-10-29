@@ -18,6 +18,8 @@
 - Are const variables immutable?
 
 ** for...of
+- Similarity to for...in
+- Arrays and strings are iterables
 
 ** Template literals
 

@@ -30,6 +30,9 @@
 - Especially useful for anonymous functions and callbacks
 
 ** Promises
+- A new object that helps with asynchronous code
+- Three methods: then, catch, finally
+- More symantically clear than callbacks and better for chaining
 
 * Export options :noexport:
 #+OPTIONS: toc:nil

@@ -22,8 +22,12 @@
 - Arrays and strings are iterables
 
 ** Template literals
+- Useful, but not a big difference
 
 ** Arrow functions
+- Greatest thing since tabbed browsing (pro-tip: ctrl+shift+t)
+- Difference with "this"
+- Especially useful for anonymous functions and callbacks
 
 ** Promises
 

@@ -1,35 +1,36 @@
-* Goal
+* ES6
+** Goal
 - Know about the fancy ES6 features and when to use them
 
-* ES6 Features
+** ES6 Features
 - Officially called ECMAScript 2015 (sometimes written ES2015)
 - http://es6-features.org
 - https://babeljs.io/en/repl.html
 
-** Strict mode
+*** Strict mode
 - https://johnresig.com/blog/ecmascript-5-strict-mode-json-and-more/
 - Throws errors for some common coding mistakes
 - Enabled by default in modules
 
-** let, const
+*** let, const
 - What is the scope for var?
 - What is the scope for let and const?
 - How are let and const different?
 - Are const variables immutable?
 
-** for...of
+*** for...of
 - Similarity to for...in
 - Arrays and strings are iterables
 
-** Template literals
+*** Template literals
 - Useful, but not a big difference
 
-** Arrow functions
+*** Arrow functions
 - Greatest thing since tabbed browsing (pro-tip: ctrl+shift+t)
 - Difference with "this"
 - Especially useful for anonymous functions and callbacks
 
-** Promises
+*** Promises
 - A new object that helps with asynchronous code
 - Three methods: then, catch, finally
 - More symantically clear than callbacks and better for chaining

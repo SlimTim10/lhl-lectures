@@ -42,15 +42,3 @@ function const_example() {
 
 // console.log('const example');
 // const_example();
-
-
-function final_example() {
-  const names = ['Alice', 'Bob', 'Carol'];
-
-  for (let i = 0; i < names.length; i++) {
-    console.log(names[i]);
-  }
-}
-
-// console.log('final example');
-// final_example();

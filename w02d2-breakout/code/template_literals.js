@@ -1,5 +1,5 @@
 function old_way() {
-  var person = {
+  const person = {
     name: 'Alice',
     age: 25,
     food: 'spam'

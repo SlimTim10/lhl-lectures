@@ -1,7 +1,7 @@
 function old_way() {
-  var names = ['Alice', 'Bob', 'Carol', 'Dean'];
+  const names = ['Alice', 'Bob', 'Carol', 'Dean'];
 
-  for (var i = 0; i < names.length; i++) {
+  for (let i = 0; i < names.length; i++) {
     console.log(names[i]);
   }
 }

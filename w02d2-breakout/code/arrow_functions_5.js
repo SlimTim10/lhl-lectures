@@ -1,4 +1,4 @@
-var person = {
+const person = {
   name: 'Alice',
   age: 25
 };

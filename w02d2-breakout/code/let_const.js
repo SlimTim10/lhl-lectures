@@ -40,8 +40,8 @@ function const_example() {
   }
 }
 
-console.log('const example');
-const_example();
+// console.log('const example');
+// const_example();
 
 
 function final_example() {

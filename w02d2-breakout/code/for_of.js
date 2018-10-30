@@ -11,7 +11,7 @@ function old_way() {
 function new_way() {
   const names = ['Alice', 'Bob', 'Carol', 'Dean'];
 
-  for (let name of names) {
+  for (const name of names) {
     console.log(name);
   }
 }
@@ -21,7 +21,7 @@ function new_way() {
 function other() {
   const names = ['Alice', 'Bob', 'Carol', 'Dean'];
   
-  for (let name in names) {
+  for (const name in names) {
     console.log(name);
   }
 }
@@ -36,7 +36,7 @@ function another() {
     Dean: 28
   };
 
-  for (let person of people) {
+  for (const person of people) {
     console.log(age);
   }
 }
@@ -46,7 +46,7 @@ function another() {
 function how_about_strings() {
   const sentence = 'ES6 is better than ES2015';
 
-  for (let letter of sentence) {
+  for (const letter of sentence) {
     console.log(letter);
   }
 }
